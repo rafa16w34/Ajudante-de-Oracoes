@@ -120,13 +120,14 @@ void misterio(int opt, int x){
 void rosario(){
 
 	int opt = 10,op = 10;
+	char c;
 
 	printf("\nGostaria de rezar o:\n1 - Terco\n2 - Rosario\n");
 	scanf("%d",&op);
 
 	//Caso escolha o terço, deve escolher qual o misterio do dia, caso seja o rosario, ele ira navegar pelas misterios na função misterio
 	if(op == 1){
-		printf("\nEscolha os Misterios do dia:\n1 - Gozosos\n2 - Luminosos\n3 - Dolorosos\n4- Gloriosos\n");
+		printf("\nEscolha os Misterios do dia:\n1 - Gozosos\n2 - Luminosos\n3 - Dolorosos\n4 - Gloriosos\n");
 		scanf("%d",&opt);
 
 	}else if(op == 2){
@@ -136,12 +137,21 @@ void rosario(){
 
 	//Inicio da oração
 	printf("\nIremos rezar esse Santo Terço, em nome do Pai, do Filho e do Espirito Santo\n");
+	printf("\nPressione enter para continuar\n");
+	scanf("%c",&c);
+	scanf("%c",&c);
 
 	//Credo
 	printf("\nCreio em um so Deus, Pai Todo-Poderoso, criador do ceu e da terra,\nde todas as coisas visiveis e invisiveis.\nCreio em um so Senhor, Jesus Cristo, Filho Unigenito de Deus,\nnascido do Pai antes de todos os seculos: Deus de Deus, luz da luz,\nDeus verdadeiro de Deus verdadeiro,\ngerado, nao criado, consubstancial ao Pai.\nPor ele todas as coisas foram feitas.\nE por nos, homens, e para nossa salvação, desceu dos ceus\n*e se encarnou pelo Espirito Santo,\nno seio da Virgem Maria, e se fez homem.*\nTambem por nos foi crucificado sob Poncio Pilatos;\npadeceu e foi sepultado.\nRessuscitou ao terceiro dia,\nconforme as Escrituras,\ne subiu aos ceus,\nonde esta sentado a direita do Pai.\nE de novo ha de vir,\nem sua gloria,\npara julgar os vivos e os mortos;\ne o seu reino nao tera fim.\nCreio no Espirito Santo,\nSenhor que da a vida,\ne procede do Pai e do Filho;\ne com o Pai e o Filho e adorado e glorificado:\nele que falou pelos profetas.\nCreio na Igreja, una, santa, catolica e apostolica.\nProfesso um so batismo para remissao dos pecados.\nE espero a ressurreicao dos mortos \ne a vida do mundo que ha de vir.\nAmem.\n\n");
+	printf("\nPressione enter para continuar\n");
+	scanf("%c",&c);
+	scanf("%c",&c);
 
 	//Pai Nosso
 	printf("\nPai nosso que estais nos Ceus,\nsantificado seja o vosso Nome,\nvenha a nos o vosso Reino,\nseja feita a vossa vontade assim na terra como no Ceu.\nO pao nosso de cada dia nos dai hoje\nperdoai-nos as nossas ofensas\nassim como nos perdoamos a quem nos tem ofendido,\ne não nos deixeis cair em tentação,\nmas livrai-nos do Mal.\nAmen\n");
+	printf("\nPressione enter para continuar\n");
+	scanf("%c",&c);
+	scanf("%c",&c);
 
 	//3 Ave Marias + Angelus
 	for(int i = 0; i<3; i++){
@@ -159,11 +169,17 @@ void rosario(){
 		}
 
 		printf("\nAve Maria, cheia de graca,\no Senhor e convosco,\nbendita sois vos entre as mulheres\ne bendito e o fruto do vosso ventre, Jesus.\nSanta Maria, Mae de Deus,\nrogai por nos pecadores,\nagora e na hora da nossa morte.\nAmen\n");
-			
+		printf("\nPressione enter para continuar\n");
+		scanf("%c",&c);
+		scanf("%c",&c);	
+
 	}
 
 	//Gloria ao Pai
 	printf("\nGloria ao Pai, ao Filho e ao Espirito Santo.\nAmem!\n\nOh meu bom Jesus, levai as almas todas para o Ceu\ne socorrei principalmente aquelas que mais precisarem\nda vossa infinita misericordia!\n");
+	printf("\nPressione enter para continuar\n");
+	scanf("%c",&c);
+	scanf("%c",&c);
 
 	if (op == 1){
 		for(int i = 1; i<6; i++){
@@ -173,17 +189,24 @@ void rosario(){
 
 			//Pai Nosso
 			printf("\nPai nosso que estais nos Ceus,\nsantificado seja o vosso Nome,\nvenha a nos o vosso Reino,\nseja feita a vossa vontade assim na terra como no Ceu.\nO pao nosso de cada dia nos dai hoje\nperdoai-nos as nossas ofensas\nassim como nos perdoamos a quem nos tem ofendido,\ne não nos deixeis cair em tentação,\nmas livrai-nos do Mal.\nAmen\n");
+			printf("\nPressione enter para continuar\n");
+			scanf("%c",&c);
+			scanf("%c",&c);
 
 			//10 Ave Marias
 			for(int j = 0; j<10; j++){
 
-				printf("\n%dAve Maria, cheia de graca,\no Senhor e convosco,\nbendita sois vos entre as mulheres\ne bendito e o fruto do vosso ventre, Jesus.\nSanta Maria, Mae de Deus,\nrogai por nos pecadores,\nagora e na hora da nossa morte.\nAmen\n",j);
-
+				printf("\n(%d°) Ave Maria, cheia de graca,\no Senhor e convosco,\nbendita sois vos entre as mulheres\ne bendito e o fruto do vosso ventre, Jesus.\nSanta Maria, Mae de Deus,\nrogai por nos pecadores,\nagora e na hora da nossa morte.\nAmen\n",j+1);
+				printf("\nPressione enter para continuar\n");
+				scanf("%c",&c);
+				scanf("%c",&c);
 			}
 
 			//Gloria ao Pai
 			printf("\nGloria ao Pai, ao Filho e ao Espirito Santo.\nAmem!\n\nOh meu bom Jesus, levai as almas todas para o Ceu\ne socorrei principalmente aquelas que mais precisarem\nda vossa infinita misericordia!\n");
-
+			printf("\nPressione enter para continuar\n");
+			scanf("%c",&c);
+			scanf("%c",&c);
 
 		}
 	}else if(op == 2){
@@ -195,16 +218,25 @@ void rosario(){
 
 				//Pai Nosso
 				printf("\nPai nosso que estais nos Ceus,\nsantificado seja o vosso Nome,\nvenha a nos o vosso Reino,\nseja feita a vossa vontade assim na terra como no Ceu.\nO pao nosso de cada dia nos dai hoje\nperdoai-nos as nossas ofensas\nassim como nos perdoamos a quem nos tem ofendido,\ne não nos deixeis cair em tentação,\nmas livrai-nos do Mal.\nAmen\n");
+				printf("\nPressione enter para continuar\n");
+				scanf("%c",&c);
+				scanf("%c",&c);
 
 				//10 Ave Marias
 				for(int j = 0; j<10; j++){
 
 					printf("\n%dAve Maria, cheia de graca,\no Senhor e convosco,\nbendita sois vos entre as mulheres\ne bendito e o fruto do vosso ventre, Jesus.\nSanta Maria, Mae de Deus,\nrogai por nos pecadores,\nagora e na hora da nossa morte.\nAmen\n",j);
+					printf("\nPressione enter para continuar\n");
+					scanf("%c",&c);
+					scanf("%c",&c);
 
 				}
 
 				//Gloria ao Pai
 				printf("\nGloria ao Pai, ao Filho e ao Espirito Santo.\nAmem!\n\nOh meu bom Jesus, levai as almas todas para o Ceu\ne socorrei principalmente aquelas que mais precisarem\nda vossa infinita misericordia!\n");
+				printf("\nPressione enter para continuar\n");
+				scanf("%c",&c);
+				scanf("%c",&c);
 
 
 			}
@@ -214,9 +246,16 @@ void rosario(){
 
 	//Salve Rainha
 	printf("\nInfinitas gracas vos damos Soberana Rainha,\npelos beneficios que todos os dias recebemos de vossas maos maternais,\ndignais-vos agora e para sempre tomarmos de vosso poderoso amparo,\ne para mais vos agradecer, vos saldamos com uma Salve Rainha!\n");
+	printf("\nPressione enter para continuar\n");
+	scanf("%c",&c);
+	scanf("%c",&c);
+
 
 	printf("\nSalve Rainha,\nMae de misericordia,vida e docura, esperanca nossa salve,\na vos bradamos os degradados filhos de eva,\ne a vos suspiramos gemendo e chorando nesse vale de lagrimas,\nei pois advogada nossa esses vossos olhos misericordiosos a nos volvei,\ne depois desterro mostrai-nos a Jesus, bendito fruto do vosso ventre.\nOh Clemente, oh Piedosa,\noh doce sempre virgem Maria.\nRogai por nos Santa Mae de Deus,\npara que sejamos dignos das promessas de Cristo.\nAmem!\n");
-	
+	printf("\nPressione enter para continuar\n");
+	scanf("%c",&c);
+	scanf("%c",&c);
+
 }
 
 
